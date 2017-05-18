@@ -1,0 +1,51 @@
+app.coffee
+framer/backups/backup-2017-05-15 13.08.23.coffee
+framer/backups/backup-2017-05-15 15.27.26.coffee
+framer/backups/backup-2017-05-15 15.29.26.coffee
+framer/backups/backup-2017-05-16 11.59.29.coffee
+framer/backups/backup-2017-05-16 15.30.29.coffee
+framer/backups/backup-2017-05-16 15.33.10.coffee
+framer/backups/backup-2017-05-16 15.34.10.coffee
+framer/backups/backup-2017-05-16 15.35.10.coffee
+framer/backups/backup-2017-05-16 15.36.10.coffee
+framer/backups/backup-2017-05-17 10.34.41.coffee
+framer/backups/backup-2017-05-17 13.32.40.coffee
+framer/backups/backup-2017-05-17 13.46.40.coffee
+framer/backups/backup-2017-05-17 21.19.30.coffee
+framer/backups/backup-2017-05-17 21.46.30.coffee
+framer/backups/backup-2017-05-17 21.47.30.coffee
+framer/coffee-script.js
+framer/config.json
+framer/framer.generated.js
+framer/framer.init.js
+framer/framer.js
+framer/framer.js.map
+framer/framer.modules.js
+framer/images/cursor-active.png
+framer/images/cursor-active@2x.png
+framer/images/cursor.png
+framer/images/cursor@2x.png
+framer/images/icon-120.png
+framer/images/icon-152.png
+framer/images/icon-180.png
+framer/images/icon-192.png
+framer/images/icon-76.png
+framer/manifest.txt
+framer/preview.png
+framer/social-1200x630.png
+framer/social-800x600.png
+framer/social-80x80.png
+framer/social-880x460.png
+framer/style.css
+framer/version
+images/d.json
+images/data.json
+images/e.json
+images/loading.json
+images/pen.json
+images/star.json
+images/x.json
+images/xde.json
+index.html
+js/bodymovin.min.js
+modules/BodymovinLayer.coffee

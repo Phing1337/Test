@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+
+		<meta name="format-detection" content="telephone=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<script type="text/javascript">
+		// This automatically sets the right viewport scale on mobile devices
+		(function() {
+ 		var scale = 1 / window.devicePixelRatio
+ 		var viewport = "width=device-width, height=device-height, initial-scale=" + scale + ", maximum-scale=" + scale + ", user-scalable=no"
+ 		var iOS = /iPad|iPhone|iPod/.test(navigator.platform)
+ 		if (iOS) { viewport += ", shrink-to-fit=no" }
+ 		document.write("<meta name=\"viewport\" content=\"" + viewport + "\">")
+		})()
+		</script>
+
+		<link rel="apple-touch-icon" href="framer/images/icon-120.png">
+		<link rel="apple-touch-icon" href="framer/images/icon-76.png" sizes="76x76">
+		<link rel="apple-touch-icon" href="framer/images/icon-120.png" sizes="120x120">
+		<link rel="apple-touch-icon" href="framer/images/icon-152.png" sizes="152x152">
+		<link rel="apple-touch-icon" href="framer/images/icon-180.png" sizes="180x180">
+		<link rel="apple-touch-icon" href="framer/images/icon-192.png" sizes="192x192">
+
+		<script src="js/bodymovin.min.js" type="text/javascript"></script>
+		<link rel="stylesheet" type="text/css" href="framer/style.css?nocache=6d40bc53861208d298f85019e08849ff">
+
+		<script src="framer/coffee-script.js"></script>
+		<script src="framer/framer.js?nocache=43f7e98547313f3357a06f5b9d8cd81c"></script>
+		<script src="framer/framer.generated.js?nocache=9c2d59c64fda1756545696b117afc690"></script>
+		<script src="framer/framer.modules.js?nocache=2f24bf85a0d639f6cd98232a5982513b"></script>
+		<script>Framer.Device.hideBezel = false</script><script>document.addEventListener("DOMContentLoaded", function() {window.__framerClientCodeId = 35;window.__framerNew = function (n,loc,th,i){if (i == null) { return i };i.__framerInstanceInfo = _.defaults({name:n,location:loc,hash:th},i.__framerInstanceInfo);_.defaults(i.__framerInstanceInfo,{name:"Untitled"});return i;};(function() {
+  var BodymovinLayer, animHolder, animLoading, animPen, animStar, author2, author3, colors, gutter, i, index, item, j, len, page, pageCount, pageScroller, pagesHolder, ref, sizeLabel1, sizeLabel2, sizeLabel3;
+
+  BodymovinLayer = require('BodymovinLayer').BodymovinLayer;
+
+  pageCount = 3;
+
+  gutter = 60;
+
+  pagesHolder = [];
+
+  colors = ["#03A9F4", "#FFF", "#607D8B"];
+
+  pageScroller = window.__framerNew("pageScroller", "17:19-22:11", "#116796060",new PageComponent({
+    point: Align.center,
+    width: Screen.width / 1.5,
+    height: Screen.height / 1.5,
+    scrollVertical: false,
+    clip: false
+  }));
+
+  pageScroller.content.clip = false;
+
+  for (index = i = 0, ref = pageCount; 0 <= ref ? i < ref : i > ref; index = 0 <= ref ? ++i : --i) {
+    page = window.__framerNew("page", "27:12-35:0", "#e4dfdbfa",new Layer({
+      size: pageScroller.size,
+      x: (pageScroller.width + gutter) * index,
+      backgroundColor: colors[index],
+      borderRadius: 10,
+      parent: pageScroller.content,
+      clip: false
+    }));
+    pagesHolder.push(page);
+    page.onClick(function() {
+      return pageScroller.snapToPage(this);
+    });
+  }
+
+  animLoading = window.__framerNew("animLoading", "59:18-63:22", "?",new BodymovinLayer({
+    name: "LoadingAnimation",
+    path: "images/loading.json",
+    size: 400,
+    parent: pagesHolder[0]
+  }));
+
+  animLoading.center();
+
+  sizeLabel1 = window.__framerNew("sizeLabel1", "66:17-79:12", "#156453d29",new TextLayer({
+    text: "12 KB",
+    parent: pagesHolder[0],
+    x: Align.center,
+    color: "#FFF",
+    y: -70
+  }));
+
+  animPen = window.__framerNew("animPen", "80:14-84:22", "?",new BodymovinLayer({
+    name: "PenAnimation",
+    path: "images/pen.json",
+    size: 400,
+    parent: pagesHolder[1]
+  }));
+
+  animPen.center();
+
+  sizeLabel2 = window.__framerNew("sizeLabel2", "87:17-92:6", "#e6af480a",new TextLayer({
+    text: "36 KB",
+    parent: pagesHolder[1],
+    x: Align.center,
+    color: "#FFF",
+    y: -70
+  }));
+
+  author2 = window.__framerNew("author2", "93:14-100:12", "#db44bd0c",new TextLayer({
+    fontSize: 24,
+    parent: pagesHolder[1],
+    x: Align.center,
+    color: "#000",
+    y: pageScroller.height + 30
+  }));
+
+  animStar = window.__framerNew("animStar", "101:15-105:22", "?",new BodymovinLayer({
+    name: "StarAnimation",
+    path: "images/star.json",
+    size: 400,
+    parent: pagesHolder[2]
+  }));
+
+  animStar.center();
+
+  sizeLabel3 = window.__framerNew("sizeLabel3", "108:17-113:6", "#1363862b0",new TextLayer({
+    text: "8 KB",
+    parent: pagesHolder[2],
+    x: Align.center,
+    color: "#FFF",
+    y: -70
+  }));
+
+  author3 = window.__framerNew("author3", "114:14-122:39", "#12acdd7b2",new TextLayer({
+    fontSize: 24,
+    parent: pagesHolder[2],
+    x: Align.center,
+    color: "#000",
+    y: pageScroller.height + 30
+  }));
+
+  animHolder = [animLoading, animPen, animStar];
+
+  for (j = 0, len = animHolder.length; j < len; j++) {
+    item = animHolder[j];
+    item.onTap(function() {
+      if (this.direction !== 1) {
+        return this.direction = 1;
+      } else {
+        return this.direction = -1;
+      }
+    });
+  }
+
+}).call(this);
+})</script>
+
+	</head>
+	<body>
+	</body>
+</html>
